@@ -1,6 +1,7 @@
 # Overview-of-DevOps-tools-and-technologies
 
 🔍 What is DevOps?
+
 DevOps is a way of working where developers and operations teams work together to build, test, and launch software faster and better.
 Before DevOps, developers made the app and gave it to the operations team to deploy. If something went wrong, both teams blamed each other. There was poor communication and slow problem-solving.
 DevOps is the bridge between both teams. It helps them work as one, from writing code to running it live.
