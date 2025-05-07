@@ -18,14 +18,18 @@ The operations team releases and deploys the app — this is called Continuous D
 
 
 WHY NEED 
+
 	→ To ensure smooth and error-free application launches
 	→ To improve efficiency and increase the speed of development and deployment
 	→ To enhance overall product quality through continuous testing and feedback
 	
 CI - CD PIPELINE EXPLANATION
+
 CODE 
+
 Write the code of full application
 TO BUILD
+
 To run the code in the form of app.js, app.exe, or other executable files on systems like Linux,
 the code must first be converted into an executable form.
 You need tools like:
@@ -38,6 +42,7 @@ bash
 ./build.sh
 
 GITHUB
+
 For the development team, GitHub is used to write and manage the application's code.
 When you want to share this code with the world, GitHub is the platform used to do that
 Now, as our application requires many new features, we scale out our development team by adding more developers.
@@ -65,6 +70,7 @@ git push origin feature/new-feature
 git push
 
 TESTING
+
 Before deploying any application, we must test the build thoroughly.
 This helps us make sure the code works as expected, passes all test cases, and does not break any existing features.
 Automated testing is often used at this stage as part of the CI (Continuous Integration) process.
@@ -72,12 +78,15 @@ TOOLS likek azure ,Puppeteer
 
 Continuous Testing Integration
 Integrates tests into CI/CD pipelines.
+
 	• Jenkins (with plugins)
 	• GitLab CI
 	• GitHub Actions
 
 Deployment CD
+
 Docker 
+
 Create a Docker Image After Build and Testing
 Once your code is built and tested (using CI tools), it’s packaged into a Docker image. The image is a snapshot of the application and its environment, including the operating system, libraries, and configuration files needed for the app to run.
 
@@ -105,18 +114,23 @@ CMD ["npm", "start"]
 This will create app by using (.) current directory 
 
 OPERATE
+
 Container Orchestration 
+
 Imagine your app is running in containers, and you're handling a match like Pakistan vs Afghanistan, which doesn't have many users. But when it’s a high-profile match like Pakistan vs India, millions of users start watching, and your app might not be able to handle the load.
 Even though you have containers running your app, when a lot of users come in, you need more servers to run more containers to handle the extra traffic. Without enough servers, your app might slow down or crash.
 This is where Kubernetes helps. It automatically adds more containers and can even add more servers when the number of users increases. So, when the traffic spikes, Kubernetes adjusts everything to make sure your app can still handle all the users smoothly without any issues.
 In simple terms, Kubernetes helps you scale up your containers and servers automatically, so your app keeps running fast and efficiently, even when millions of people are using it at once.
 
 Terraform:
+
 Infrastructure as Code (IaC)
+
 Provisioning Infrastructure: This means setting up the basic resources you need to run your application, like servers, databases, and networks. It's like building the foundation of a house before you decorate it.
 Terraform is a tool that helps you manage your cloud resources (like servers, databases, etc.) using code. Instead of manually setting up things like servers, you write code, and Terraform automatically creates and manages everything for you.
 
 Why Use Terraform?
+
 	1. Write simple code to set up your infrastructure, like creating a server.
 	2. Terraform works across platforms like AWS, Azure, Google Cloud, and more.
 	3.  Terraform ensures your setup is always the same, preventing mistakes.
@@ -133,10 +147,12 @@ Once the resources (like servers) are set up by Terraform, Ansible is used to co
 Monitoring 
 
 Prometheus:
+
 Prometheus is a monitoring and alerting toolkit that collects and stores metrics (like CPU usage, memory, disk space, and more) from your applications and infrastructure.
 It scrapes data from various sources (like servers, databases, or services) at regular intervals and stores it in a time-series database.
 
 Grafana:
+
 Grafana is a visualization tool that connects to Prometheus (and other data sources) and helps you create dashboards to display your metrics in a way that's easy to understand.
 
 ![image](https://github.com/user-attachments/assets/222ce0b9-8fa1-4977-81f2-135e5db48c5f)
