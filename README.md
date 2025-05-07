@@ -155,4 +155,4 @@ Grafana:
 
 Grafana is a visualization tool that connects to Prometheus (and other data sources) and helps you create dashboards to display your metrics in a way that's easy to understand.
 
-![image](https://github.com/user-attachments/assets/222ce0b9-8fa1-4977-81f2-135e5db48c5f)
+
